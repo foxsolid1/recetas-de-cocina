@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recetas de Cocina</title>
+    <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+    <header>
+        <h1>Recetas de Cocina</h1>
+        <nav>
+            <ul>
+                <li><a href="#home">Inicio</a></li>
+                <li><a href="#recipes">Recetas</a></li>
+                <li><a href="#contact">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section id="home">
+        <h2>Bienvenidos a Recetas de Cocina</h2>
+        <p>Encuentra las mejores recetas para tus comidas favoritas.</p>
+    </section>
+    <section id="recipes">
+        <h2>Nuestras Recetas</h2>
+        <div class="recipe">
+            <h3>Paella</h3>
+            <p>Una deliciosa receta de paella con mariscos.</p>
+            <button onclick="showRecipeDetails('paella')">Ver receta</button>
+        </div>
+        <div class="recipe">
+            <h3>Ensalada César</h3>
+            <p>Fresca y saludable ensalada César.</p>
+            <button onclick="showRecipeDetails('cesar')">Ver receta</button>
+        </div>
+    </section>
+    <section id="contact">
+        <h2>Contacto</h2>
+        <form>
+            <label for="name">Nombre:</label>
+            <input type="text" id="name" name="name">
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email">
+            <label for="message">Mensaje:</label>
+            <textarea id="message" name="message"></textarea>
+            <button type="submit">Enviar</button>
+        </form>
+    </section>
+    <footer>
+        <p>&copy; 2024 Recetas de Cocina. Todos los derechos reservados.</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
